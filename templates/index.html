@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>非言語 一問一答（白黒・親指操作）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]'], ['$$','$$']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <h1>非言語　一問一答</h1>
+    <p class="subtitle">白黒／片手操作／LaTeX表示</p>
+  </header>
+
+  <main id="card-area" class="card-area" aria-live="polite">
+    <div id="topic" class="topic"></div>
+    <div id="formula" class="formula mjx"></div>
+    <div id="question" class="question"></div>
+    <div id="answer" class="answer hidden mjx"></div>
+    <div id="hint" class="hint hidden"></div>
+  </main>
+
+  <nav class="control-bar">
+    <button id="prevBtn" class="btn" aria-label="前へ">◀</button>
+    <button id="toggleAnsBtn" class="btn wide" aria-label="答えを表示/非表示">答え</button>
+    <button id="hintBtn" class="btn" aria-label="ヒントを表示/非表示">ヒント</button>
+    <button id="nextBtn" class="btn" aria-label="次へ">▶</button>
+  </nav>
+
+  <section class="toolbar">
+    <label class="chk"><input type="checkbox" id="shuffleToggle">シャッフル</label>
+    <span id="counter" class="counter">1 / 1</span>
+  </section>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
