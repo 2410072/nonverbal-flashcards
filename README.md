@@ -14,6 +14,8 @@ Flask + MathJax。WSL2 で開発、Render or Fly.io に公開可能。
 - python3 app.py
 - そうすれば、httpのリンクが出るので、それをクリックするとwebアプリを開けます。
 
+origin/mainではなく、mainを選び、＋アイコンをクリックしてstageを上げ、コメントを書いてからCommitすればGitHubリポジトリに反映できます。
+
 ## 0. 前提
 - Windows 11 + **WSL2 (Ubuntu)** + **VS Code Remote-WSL**  
 - Git/GitHub アカウント
