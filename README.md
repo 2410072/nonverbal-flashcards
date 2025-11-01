@@ -6,13 +6,13 @@ PCでもスマホでも簡単に勉強できるようにしました。
 
 Flask + MathJax。WSL2 で開発、Render or Fly.io に公開可能。
 
-まず、下記のコマンドを実行してください。
-ls
-次に下記のコマンドを実行してください。
-source .venv/bin/activate
-その後、下記のコマンドを実行してください。
-python3 app.py
-そうすれば、httpのリンクが出るので、それをクリックするとwebアプリを開けます。
+- まず、下記のコマンドを実行してください。
+- ls
+- 次に下記のコマンドを実行してください。
+- source .venv/bin/activate
+- その後、下記のコマンドを実行してください。
+- python3 app.py
+- そうすれば、httpのリンクが出るので、それをクリックするとwebアプリを開けます。
 
 ## 0. 前提
 - Windows 11 + **WSL2 (Ubuntu)** + **VS Code Remote-WSL**  
